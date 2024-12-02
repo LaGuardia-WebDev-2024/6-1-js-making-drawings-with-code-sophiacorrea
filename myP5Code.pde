@@ -11,22 +11,23 @@ void draw(){
   strokeWeight(3);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
-  ellipse(50,50,100,80);
-  
+  ellipse(200,50,100,95);
+  ellipse(200,170,150,140);
+  ellipse(200,332,200,180)
 
 }
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
 
-var fillR = 255;
-var fillG = 0;
-var fillB = 255;
+var fillR = 137;
+var fillG = 207;
+var fillB = 240;
 
 //🟡Mouse Pressed Procedue - Runs When Mouse is Pressed on Canvas
 void mousePressed(){
   fill(fillR,fillG,fillB);
-  strokeWeight(1);
+  strokeWeight(5);
   ellipse(mouseX, mouseY, 12, 12);
   var myText = "x: " + mouseX + "\ny: " + mouseY;
   text(myText, mouseX + 15, mouseY);
@@ -35,20 +36,20 @@ void mousePressed(){
 
 //🟡Key Pressed Procedure - Runs When Keyboard Key is Pressed
 void keyPressed(){
-  if(key == 'c' || key == 'C'){
+  if(key == 'K' || key == 'k'){
     background(255,255,255,100);
   }
 
   if(key == 'r' || key == 'R'){
-    fillR = random(100,255);
-    fillG = 0;
-    fillB = 0;
+    fillR = 244;
+    fillG = 194;
+    fillB = 194;
   }
 
   if(key == 'g' || key == 'G'){
-    fillR = 0;
-    fillG = random(100,255);
-    fillB = 0;
+    fillR = 140;
+    fillG =255;
+    fillB = 148;
   }
 }
 
